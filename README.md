@@ -1,2 +1,2 @@
 # Snapulse
-## Website link - https://snapulse.onrender.com
+## Visit my website here - https://snapulse.onrender.com
