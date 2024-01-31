@@ -7,11 +7,13 @@ import joblib
 import os
 import itertools
 
-location = 'C:\Flask\Snapulse'
-fullpath = os.path.join(location, 'heartmodeltest.pkl')
+# location = 'C:\Flask\Snapulse'
+# fullpath = os.path.join(location, 'heartmodeltest.pkl')
 
 app = Flask(__name__ , template_folder='template')
-model = joblib.load(fullpath)
+# model = joblib.load(fullpath)
+filename = 'heartmodeltest.pkl'
+model = pickle.load(open(filename, 'rb'))
 
 @app.route("/",)
 def hello():
